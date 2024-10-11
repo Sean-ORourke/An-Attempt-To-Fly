@@ -1,4 +1,0 @@
-repository "An Attempt To Fly Game@WhateverIWant@cloud"
-  path "/"
-    br "/main"
-    co "/main"
