@@ -45,11 +45,21 @@ public class PlayerMovement : MonoBehaviour
             {
                 velocity.y = Mathf.Sqrt(-2f * gravity);
                 // reference your notes for further development
+                //while (!isGrounded)
+                //{
+                //    velocity.y = 1;
+                //}
+                //velocity.y = Mathf.Sqrt(-2f * gravity);
             }
 
 
 
         }
+
+        //if (Input.GetButton("Jump"))
+        //{
+        //    velocity.y = 1;
+        //}
 
 
         // Apply gravity
