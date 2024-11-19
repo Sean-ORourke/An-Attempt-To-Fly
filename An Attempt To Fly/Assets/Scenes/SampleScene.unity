@@ -1422,6 +1422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 780814903}
+  cameraTransform: {fileID: 0}
   speed: 6
   gravity: -9.81
   jumpHeight: 1.5
@@ -2261,7 +2262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058343984}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 158b0a85328bf48d8a9e787b128967c0, type: 3}
   m_Name: 

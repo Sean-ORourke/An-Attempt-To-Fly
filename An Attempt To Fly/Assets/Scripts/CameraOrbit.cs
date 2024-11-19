@@ -28,10 +28,10 @@ public class CameraOrbit : MonoBehaviour
         float horizontalInput = 0f;
         float verticalInput = 0f;
 
-        if (Input.GetKey(KeyCode.I)) verticalInput = 1f; // Up 
-        if (Input.GetKey(KeyCode.K)) verticalInput = -1f; // Down
-        if (Input.GetKey(KeyCode.J)) horizontalInput = -1f; // Left
-        if (Input.GetKey(KeyCode.L)) horizontalInput = 1f; // Right
+        //if (Input.GetKey(KeyCode.I)) verticalInput = 1f; // Up 
+        //if (Input.GetKey(KeyCode.K)) verticalInput = -1f; // Down
+        if (Input.GetKey(KeyCode.L)) horizontalInput = -1f; // Left
+        if (Input.GetKey(KeyCode.J)) horizontalInput = 1f; // Right
 
         // Calculate rotation around the parent
         Quaternion horizontalRotation = Quaternion.Euler(0f, horizontalInput * rotationSpeed * Time.deltaTime, 0f);
