@@ -37,11 +37,22 @@ public class CameraOrbit : MonoBehaviour
         verticalInput += Input.GetAxis("RightStickVertical");
 
 
-        // Calculate rotation around the parent
+        // Horizontal rotation: rotate around the world's up axis
         Quaternion horizontalRotation = Quaternion.Euler(0f, horizontalInput * rotationSpeed * Time.deltaTime, 0f);
-        Quaternion verticalRotation = Quaternion.Euler(verticalInput * rotationSpeed * Time.deltaTime, 0f, 0f);
 
-        // Rotate the offset vector
+        // Vertical rotation: calculate the angle of the offset relative to the parent
+        Vector3 desiredPosition = parentObject.position + offset;
+        Vector3 directionToCamera = (transform.position - parentObject.position).normalized;
+        float currentVerticalAngle = Mathf.Asin(directionToCamera.y) * Mathf.Rad2Deg;
+
+        // Restrict vertical rotation to prevent flipping
+        float verticalLimit = 89f; // Set just below 90 to avoid flickering
+        float clampedVerticalInput = Mathf.Clamp(currentVerticalAngle + verticalInput * rotationSpeed * Time.deltaTime, -verticalLimit, verticalLimit);
+        float verticalRotationAngle = clampedVerticalInput - currentVerticalAngle;
+
+        Quaternion verticalRotation = Quaternion.AngleAxis(verticalRotationAngle, transform.right);
+
+        // Apply rotations
         offset = horizontalRotation * verticalRotation * offset;
 
         // Update the camera's position and keep it focused on the parent
