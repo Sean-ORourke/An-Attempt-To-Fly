@@ -242,7 +242,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -419.42102, y: -209.71051, z: -423.63794, w: -211.06354}
+  m_margin: {x: -282.75198, y: -169.70981, z: -275.302, w: -172.72954}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -714,6 +714,7 @@ MonoBehaviour:
   - 'Nintendo. Wii Sports Resort. 2009.
 
 '
+  - Robinson-Yu, Adam. A Short Hike. Whippoorwill, 2019.
   - End of experience
 --- !u!4 &1847815332
 Transform:

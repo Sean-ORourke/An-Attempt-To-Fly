@@ -242,7 +242,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -414.13116, y: -206.14685, z: -432.35303, w: -215.34828}
+  m_margin: {x: -292.4624, y: -164.47949, z: -289.0172, w: -165.3474}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -646,7 +646,7 @@ MonoBehaviour:
   lines:
   - 'Mom, Mom did you see? I scaled the tree! '
   - 
-  - Thank You for playing
+  - Thank "Yu" for playing
 --- !u!4 &1847815332
 Transform:
   m_ObjectHideFlags: 0
