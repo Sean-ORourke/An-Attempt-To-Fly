@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;          // If using built-in Text
 using TMPro;
-using UnityEngine.SceneManagement;                   // If using TextMeshPro
+using UnityEngine.SceneManagement;
+using System;                   // If using TextMeshPro
 
 public class TextCycler : MonoBehaviour
 {
+    public String nextScene;
     // Reference to Text or TMP_Text component
     public TMP_Text displayText; // If using TextMeshPro
     // public Text displayText;  // If using legacy UI Text, uncomment this and comment above
@@ -27,7 +29,7 @@ public class TextCycler : MonoBehaviour
     void Update()
     {
         // If the user clicks the left mouse button or presses the space key, advance the text
-        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
         {
             AdvanceText();
         }
@@ -48,7 +50,7 @@ public class TextCycler : MonoBehaviour
             
             // For now, just leave it blank once you reach the end.
             // displayText.text = "";
-            SceneManager.LoadScene("Level");
+            SceneManager.LoadScene(nextScene);
         }
     }
 }

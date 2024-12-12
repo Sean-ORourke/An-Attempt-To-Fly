@@ -181,8 +181,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7ba581691427cf54aa89face4cda9554, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 7ba581691427cf54aa89face4cda9554, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -429.79767, y: -205.75424, z: -424.08228, w: -211.46965}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -641,11 +641,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65040881266cf41b3ffe92a1f870c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: Level
   displayText: {fileID: 280659850}
   lines:
-  - a
-  - b
-  - c
+  - 'Hey, Yough.
+
+'
+  - 'Yeah, Mom?
+
+'
+  - "Can you deliver this package for me? Squirrel wanted this sweater a while ago.
+    I haven\u2019t had the time to bring it to him.\r\n"
+  - "Is Squirrel on this side of the river? Didn\u2019t see them"
+  - "Is Squirrel on this side of the river? Didn\u2019t see them..."
+  - "No, but I have a gift You! Your Dad whittled the branches, fastened the joints,
+    and I attached the cloth. He says the wings will help you glide. They\u2019ll
+    fit over your stumps.\r\n"
+  - "\u2026 What? \r\nCan I see? \r\n\u2026 Oh my, they\u2019re beautiful! I need
+    to try them on!\r\n"
+  - "Take them for a ride - I\u2019ll be watching. Don\u2019t start off too high!
+    Be careful, You! Come back to me after scale up the great tree."
+  - 'Okay!! Thank you, Mom!!
+
+'
 --- !u!4 &1847815332
 Transform:
   m_ObjectHideFlags: 0
