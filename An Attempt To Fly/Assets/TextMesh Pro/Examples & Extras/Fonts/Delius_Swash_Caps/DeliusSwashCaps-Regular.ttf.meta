@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Delius Swash Caps
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4c6418cc45365cb47bd67bc56cc1c25f, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
