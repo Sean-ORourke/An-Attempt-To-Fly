@@ -1,5 +1,5 @@
 # An Attempt To Fly
- It’s difficult to navigate a forest not made for You.
+ It’s difficult to navigate a forest not made for Yu.
 
 
 Since freshman year of college, I planned to make a game that would delve into flying mechanics in platforming, while also speaking to personal themes via the framing device of the woodlands, and their creatures. Senior year comes along, with my DNID English Capstone class, and it’s finally time to create the game that would become *An Attempt to Fly*.
